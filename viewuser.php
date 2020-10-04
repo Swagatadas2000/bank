@@ -5,14 +5,14 @@ $con=mysqli_connect('localhost','root','','sparks_data');
 $name1=$_SESSION['name'];
 $q="select name from bank where not name='$name1'";
 $result=mysqli_query($con,$q);
-/
+
 ?>
 
 
 <html>
 <head>
    <title>
-   User
+   viewUser
     </title>
     <link rel="stylesheet" href="Assets/css/style.css">
     </head>

@@ -1,16 +1,16 @@
 <?php
 session_start();
-$con=mysqli_connect('localhost','root','','spark_data');
-//mysqli_select_db($con,'test');
+$con=mysqli_connect('localhost','root','','sparks_data');
+
 $q="select name from bank";
 $result=mysqli_query($con,$q);
-//echo $_POST["transfer"];
+
 $_SESSION['to']=$_POST["transfer"];
 ?>
 <html>
 <head>
    <title>
-   User
+   viewUser
     </title>
     <link rel="stylesheet" href="Assets/css/style.css">
    <style>

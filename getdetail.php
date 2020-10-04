@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$con=mysqli_connect('localhost','root','','spark_data');
+$con=mysqli_connect('localhost','root','','sparks_data');
 
 $q="select * from bank ";
 $result=mysqli_query($con,$q);
@@ -147,7 +147,7 @@ $row_count=mysqli_num_rows($result);
         <div class="css-button" >
                   <p class="css-button-text">Home</p>
                   <div class="css-button-inner">
-                  <a href="index.php" >
+                  <a href="index.html" >
                   <div class="reset-skew">
                   <p class="css-button-inner-text">Home</p>
                 </div></a>

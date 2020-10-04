@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$con=mysqli_connect('localhost','root','','spark_data');
+$con=mysqli_connect('localhost','root','','sparks_data');
 $name=$_POST['name'];
 $q="select * from bank where name='$name'";
 $result=mysqli_query($con,$q);
@@ -45,7 +45,7 @@ $_SESSION['name']=$name;
         <div class="css-button" >
                  <p class="css-button-text">Transfer To</p>
                  <div class="css-button-inner">
-                 <a href="user.php" >
+                 <a href="viewuser.php" >
                  <div class="reset-skew">
                  <p class="css-button-inner-text">Transfer To</p>
                </div></a>
@@ -57,13 +57,12 @@ $_SESSION['name']=$name;
                <div class="css-button" >
                  <p class="css-button-text">Back</p>
                  <div class="css-button-inner">
-                 <a href="select.php" >
+                 <a href="selectuser.php.php" >
                  <div class="reset-skew">
                  <p class="css-button-inner-text">Back</p>
                </div></a>
                </div>
                </div>
-               
 
 
     </body>

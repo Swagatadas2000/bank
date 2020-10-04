@@ -1,6 +1,6 @@
 <?php
-$con=mysqli_connect('localhost','root','','spark_data');
-//mysqli_select_db($con,'id8930489_spark');
+$con=mysqli_connect('localhost','root','','sparks_data');
+
 $q="select name from bank";
 $result=mysqli_query($con,$q);
 ?>
@@ -16,19 +16,19 @@ $result=mysqli_query($con,$q);
 <body>
 
 
-<form  action="detail.php" method="post">
+<form  action="userdetail.php" method="post">
     <h1> Select User from list</h1>
     <table class="flat-table flat-table-1">
 
 
     <?php 
 session_start();
-$con=mysqli_connect('localhost','root','','spark_data');
+$con=mysqli_connect('localhost','root','','sparks_data');
 
 $q="select * from bank ";
 $result=mysqli_query($con,$q);
 $row_count=mysqli_num_rows($result);
-//echo $_SESSION['name'];
+
 
 ?>
 
@@ -166,8 +166,7 @@ $row_count=mysqli_num_rows($result);
 <td>
 
 <?php
-$con=mysqli_connect('localhost','root','','spark_data');
-//mysqli_select_db($con,'id8930489_spark');
+$con=mysqli_connect('localhost','root','','sparks_data');
 $q="select name from bank";
 $result=mysqli_query($con,$q);
 ?>
@@ -188,7 +187,7 @@ $result=mysqli_query($con,$q);
     </tr>
        <tr>
            <td></td>
-           <!--<td><input type="submit" value="submit"></td>-->
+           <td><input type="submit" value="submit"></td>
     </tr>
         </table>
 </div>

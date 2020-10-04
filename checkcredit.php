@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con=mysqli_connect('localhost','root','','spark_data');
+$con=mysqli_connect('localhost','root','','sparks_data');
 
 $name1=$_SESSION['name'];
 $q="select credit from bank where name='$name1'";
